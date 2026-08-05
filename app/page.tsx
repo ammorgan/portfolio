@@ -24,7 +24,7 @@ export default function Home() {
           </div>
           <figure className="heroPortrait">
             <img src="/amanda-morgan.jpg" alt="Mandie Morgan smiling outdoors" />
-            <figcaption>Austin, TX · Hybrid</figcaption>
+            <figcaption>Aubrey, TX · Hybrid</figcaption>
           </figure>
         </div>
       </section>
@@ -39,7 +39,7 @@ export default function Home() {
         <div className="sectionIntro"><span className="kicker">What I bring</span><h2>Leadership at the intersection of <em>product, engineering, and operations.</em></h2></div>
         <div className="proofGrid">
           <article><span>01</span><h3>Platform transformation</h3><p>Translate architecture, data flows, dependencies, and business priorities into plans teams can execute.</p></article>
-          <article><span>02</span><h3>Technical product strategy</h3><p>Shape roadmaps, prioritize backlogs, and align customer outcomes with scalable engineering delivery.</p></article>
+          <article><span>02</span><h3>Technical product strategy</h3><p>Shape roadmaps, prioritize backlogs, and translate Figma experiences into accessible, technically feasible engineering delivery.</p></article>
           <article><span>03</span><h3>AI-enabled delivery</h3><p>Use GitHub Copilot and LLMs to accelerate technical discovery, analysis, and requirements validation.</p></article>
           <article><span>04</span><h3>People &amp; organizations</h3><p>Build high-performing teams through coaching, operational clarity, executive communication, and influence.</p></article>
         </div>
