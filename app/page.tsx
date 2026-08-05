@@ -1,119 +1,66 @@
-const Arrow = () => <span aria-hidden="true">↗</span>;
+import { SiteFooter, SiteNav } from "./site-nav";
+
+const metrics = [
+  ["2.5M", "Quotes delivered in 2024"],
+  ["53%", "Purchase increase vs. Policy Center"],
+  ["60+", "Engineering dependencies managed"],
+  ["92%", "Intern conversion + $150K saved"],
+];
 
 export default function Home() {
   return (
-    <main>
-      <nav className="nav shell" aria-label="Main navigation">
-        <a className="wordmark" href="#top" aria-label="Amanda Morgan, home">
-          AM<span className="dot">.</span>
-        </a>
-        <div className="navLinks">
-          <a href="#about">About</a>
-          <a href="#work">Work</a>
-          <a className="navCta" href="#contact">Let&apos;s talk <Arrow /></a>
-        </div>
-      </nav>
-
-      <section className="hero shell" id="top">
-        <p className="eyebrow"><span /> Strategy · Story · Experience</p>
-        <h1>I make ideas<br />feel <em>inevitable.</em></h1>
-        <div className="heroBottom">
-          <p className="intro">
-            I&apos;m <strong>Amanda Morgan</strong>—a creative thinker who turns
-            complexity into clear stories, thoughtful experiences, and work
-            people remember.
-          </p>
-          <a className="scrollCue" href="#about">
-            <span className="scrollLine" /> Scroll to explore
-          </a>
-        </div>
-        <div className="orbit orbitOne" aria-hidden="true" />
-        <div className="orbit orbitTwo" aria-hidden="true" />
-      </section>
-
-      <section className="marquee" aria-label="What I bring">
-        <div>Clarity <span>✦</span> Curiosity <span>✦</span> Momentum <span>✦</span> Clarity <span>✦</span> Curiosity</div>
-      </section>
-
-      <section className="about shell" id="about">
-        <p className="sectionLabel">01 / About</p>
-        <div className="aboutContent">
+    <main id="top">
+      <SiteNav />
+      <section className="recruiterHero shell">
+        <div className="availability"><span /> Technical Product &amp; Engineering Leader</div>
+        <div className="heroGrid">
           <div>
-            <p className="lead">
-              The best work doesn&apos;t just look right. It makes the next move
-              <em> obvious.</em>
-            </p>
-            <figure className="portraitWrap">
-              <img src="/amanda-morgan.jpg" alt="Amanda Morgan smiling outdoors" />
-              <figcaption>Amanda Morgan · Creative thinker &amp; maker</figcaption>
-            </figure>
+            <h1>I turn complex<br />technology into<br /><em>clear momentum.</em></h1>
+            <p className="heroSummary"><strong>Technical product leader specializing in complex problem discovery, enterprise integrations, AI-assisted analysis, and cross-functional solution design.</strong><br /><span>11+ years connecting strategy, delivery, and people to move enterprise platforms forward.</span></p>
+            <div className="heroActions">
+              <a className="primaryButton" href="/projects">Explore technical work ↗</a>
+              <a className="textButton" href="/amanda-morgan-resume.pdf" target="_blank" rel="noreferrer">Download résumé ↓</a>
+            </div>
           </div>
-          <div className="aboutCopy">
-            <p>
-              I&apos;m drawn to the messy middle: when the idea is promising, the
-              inputs are complicated, and the path forward still needs a shape.
-            </p>
-            <p>
-              My approach blends clear thinking, sharp storytelling, and a
-              bias toward making. The goal is simple—create work that moves
-              from “interesting” to impossible to ignore.
-            </p>
+          <figure className="heroPortrait">
+            <img src="/amanda-morgan.jpg" alt="Mandie Morgan smiling outdoors" />
+            <figcaption>Austin, TX · Hybrid</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section className="impactStrip">
+        <div className="shell metricGrid">
+          {metrics.map(([value, label]) => <div className="metric" key={value}><strong>{value}</strong><span>{label}</span></div>)}
+        </div>
+      </section>
+
+      <section className="proofSection shell">
+        <div className="sectionIntro"><span className="kicker">What I bring</span><h2>Leadership at the intersection of <em>product, engineering, and operations.</em></h2></div>
+        <div className="proofGrid">
+          <article><span>01</span><h3>Platform transformation</h3><p>Translate architecture, data flows, dependencies, and business priorities into plans teams can execute.</p></article>
+          <article><span>02</span><h3>Technical product strategy</h3><p>Shape roadmaps, prioritize backlogs, and align customer outcomes with scalable engineering delivery.</p></article>
+          <article><span>03</span><h3>AI-enabled delivery</h3><p>Use GitHub Copilot and LLMs to accelerate technical discovery, analysis, and requirements validation.</p></article>
+          <article><span>04</span><h3>People &amp; organizations</h3><p>Build high-performing teams through coaching, operational clarity, executive communication, and influence.</p></article>
+        </div>
+      </section>
+
+      <section className="featuredWork">
+        <div className="shell featuredGrid">
+          <div><span className="kicker light">Featured technical project</span><h2>Engineering<br />Analytics<br /><em>Platform</em></h2></div>
+          <div className="featureDetails">
+            <p className="featureLead">A React-based analytics platform designed to turn multi-repository GitLab activity into actionable engineering intelligence.</p>
+            <ul><li>Delivery health and development activity</li><li>Defect trends and status insights</li><li>API integrations and caching strategies</li><li>AI-assisted operational analysis</li></ul>
+            <a className="inverseButton" href="/projects">View project breakdown ↗</a>
           </div>
         </div>
       </section>
 
-      <section className="work" id="work">
-        <div className="shell">
-          <p className="sectionLabel light">02 / How I work</p>
-          <div className="workHeader">
-            <h2>From signal<br />to <em>something real.</em></h2>
-            <p>A flexible practice built for ambiguous, high-potential ideas.</p>
-          </div>
-          <div className="services">
-            <article>
-              <span>01</span>
-              <h3>Find the signal</h3>
-              <p>Get underneath the noise to find the idea, audience, and point of view that matter most.</p>
-              <div className="glyph glyphSignal" aria-hidden="true" />
-            </article>
-            <article>
-              <span>02</span>
-              <h3>Shape the story</h3>
-              <p>Turn raw thinking into a clear narrative people can understand, trust, and repeat.</p>
-              <div className="glyph glyphStory" aria-hidden="true" />
-            </article>
-            <article>
-              <span>03</span>
-              <h3>Make it tangible</h3>
-              <p>Bring the idea to life through an experience that feels considered at every touchpoint.</p>
-              <div className="glyph glyphMake" aria-hidden="true" />
-            </article>
-          </div>
-        </div>
+      <section className="quoteSection shell">
+        <span className="kicker">A belief I live by</span>
+        <blockquote>“A problem is just a solution<br />that <em>hasn&apos;t been found yet.</em>”</blockquote>
       </section>
-
-      <section className="principle shell">
-        <p className="sectionLabel">03 / A guiding principle</p>
-        <blockquote>
-          “A problem is just a solution<br />that <em>hasn&apos;t been found yet.</em>”
-        </blockquote>
-        <p className="sideNote">A belief I live by.</p>
-      </section>
-
-      <section className="contact" id="contact">
-        <div className="shell contactInner">
-          <p className="sectionLabel light">04 / Contact</p>
-          <p className="contactKicker">Have a promising idea?</p>
-          <h2>Let&apos;s make it<br /><em>impossible to ignore.</em></h2>
-          <a className="contactButton" href="mailto:hello@amandamorgan.com">
-            Start a conversation <Arrow />
-          </a>
-          <div className="footerLine">
-            <span>© {new Date().getFullYear()} Amanda Morgan</span>
-            <a href="#top">Back to top ↑</a>
-          </div>
-        </div>
-      </section>
+      <SiteFooter />
     </main>
   );
 }
