@@ -49,6 +49,13 @@ em { color:var(--blue); font-weight:400; }
 .metric:first-child { padding-left:0; }.metric:last-child { border-right:0; }
 .metric strong { font:400 46px/1 Georgia,serif; letter-spacing:-.05em; color:var(--blue); }
 .metric span { font-size:11px; text-transform:uppercase; letter-spacing:.08em; }
+.valueSection { padding:145px 0 35px; display:grid; grid-template-columns:minmax(300px,.85fr) 1.15fr; gap:10%; align-items:start; }
+.valueHeading { position:sticky; top:48px; }
+.valueHeading h2 { font-size:clamp(48px,5.6vw,76px); line-height:.96; margin:42px 0 0; }
+.valueList { border-top:1px solid var(--line); }
+.valueList>div { display:grid; grid-template-columns:52px 1fr; gap:20px; align-items:center; min-height:90px; border-bottom:1px solid var(--line); }
+.valueList span { color:var(--blue); font-size:10px; letter-spacing:.12em; }
+.valueList p { margin:0; font:400 clamp(19px,2vw,27px)/1.2 Georgia,serif; letter-spacing:-.025em; }
 .proofSection { padding:145px 0; }
 .sectionIntro { display:grid; grid-template-columns:220px 1fr; gap:8%; align-items:start; padding-bottom:65px; border-bottom:1px solid var(--line); }
 .sectionIntro h2 { font-size:clamp(46px,6vw,78px); line-height:1; max-width:900px; margin:0; }
@@ -108,6 +115,7 @@ blockquote { font-size:clamp(60px,7.5vw,104px); line-height:.92; text-align:cent
   .shell{width:calc(100% - 36px)}.nav{height:76px;align-items:center;padding:0}.mobileMenuButton{display:flex}.navLinks{display:none;position:absolute;top:68px;left:0;right:0;max-width:none;padding:18px;background:var(--paper);border:1px solid var(--line);box-shadow:0 18px 45px rgba(0,0,0,.16);flex-direction:column;align-items:stretch;gap:0}.navLinks.isOpen{display:flex}.navLinks>a:not(.navCta){display:flex;padding:18px 4px;border-bottom:1px solid var(--line);font:400 28px/1 Georgia,serif}.navLinks>a:not(.navCta):after{display:none}.navLinks .themeToggle{margin-bottom:12px;align-self:flex-start}.themeLabel{display:inline}.navCta{margin-top:16px;padding:16px 18px;justify-content:space-between}
   .recruiterHero{padding:70px 0 85px}.heroGrid{grid-template-columns:1fr;gap:70px}.heroGrid h1{font-size:17.5vw}.heroSummary{font-size:16px}.heroActions{align-items:flex-start;flex-direction:column}.heroPortrait{width:85%;margin-left:auto}
   .metricGrid{grid-template-columns:repeat(2,1fr)}.metric{border-bottom:1px solid rgba(23,23,19,.25);padding:24px 15px}.metric:first-child{padding-left:15px}.metric strong{font-size:36px}
+  .valueSection{padding:100px 0 10px;grid-template-columns:1fr;gap:55px}.valueHeading{position:static}.valueList>div{grid-template-columns:42px 1fr;min-height:78px}.valueList p{font-size:21px}
   .proofSection{padding:100px 0}.sectionIntro{grid-template-columns:1fr;gap:35px}.proofGrid{grid-template-columns:1fr}.proofGrid article,.proofGrid article:nth-child(even){border-left:0;padding:30px 0;min-height:235px}.proofGrid h3{margin-top:48px}
   .featuredWork,.skillsSection{padding:95px 0}.featuredGrid{grid-template-columns:1fr}.featureDetails{padding-top:45px}.quoteSection{padding:100px 0}
   .pageHero{padding:70px 0 95px}.pageHero h1{font-size:17vw}.pageHero>p{margin-left:0}.role{grid-template-columns:1fr;gap:20px;padding:48px 0}.role h2{font-size:30px}.community{grid-template-columns:1fr;gap:50px}.community h2{font-size:52px}

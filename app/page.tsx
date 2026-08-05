@@ -2,9 +2,19 @@ import { SiteFooter, SiteNav } from "./site-nav";
 
 const metrics = [
   ["2.5M", "Quotes delivered in 2024"],
-  ["53%", "Purchase increase vs. Policy Center"],
+  ["53%", "Purchase increase vs. legacy platform"],
   ["60+", "Engineering dependencies managed"],
   ["92%", "Intern conversion + $150K saved"],
+];
+
+const valueDrivers = [
+  "Defining ambiguous problems",
+  "Whiteboarding complex systems",
+  "Challenging assumptions",
+  "Partnering with designers and senior engineers",
+  "Tracing APIs, payloads, and integrations",
+  "Using AI to uncover requirements",
+  "Identifying risks before delivery",
 ];
 
 export default function Home() {
@@ -32,6 +42,16 @@ export default function Home() {
       <section className="impactStrip">
         <div className="shell metricGrid">
           {metrics.map(([value, label]) => <div className="metric" key={value}><strong>{value}</strong><span>{label}</span></div>)}
+        </div>
+      </section>
+
+      <section className="valueSection shell">
+        <div className="valueHeading">
+          <span className="kicker">Where I create the most value</span>
+          <h2>Clarity before code.<br /><em>Confidence before delivery.</em></h2>
+        </div>
+        <div className="valueList">
+          {valueDrivers.map((driver, index) => <div key={driver}><span>0{index + 1}</span><p>{driver}</p></div>)}
         </div>
       </section>
 
