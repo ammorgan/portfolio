@@ -96,6 +96,8 @@ blockquote { font-size:clamp(60px,7.5vw,104px); line-height:.92; text-align:cent
 .projectCase { padding:45px 0 80px;border-top:1px solid var(--line); }
 .projectTop { display:flex;justify-content:space-between;font-size:10px;letter-spacing:.13em;text-transform:uppercase; }
 .projectNumber { color:var(--blue); }.projectKind { color:var(--muted); }
+.projectStatus { display:inline-flex;align-items:center;gap:9px;margin-top:24px;padding:8px 12px;border:1px solid var(--line);border-radius:99px;color:var(--muted);font-size:9px;font-weight:800;letter-spacing:.11em;text-transform:uppercase; }
+.projectStatus span { width:7px;height:7px;border-radius:50%;background:var(--acid);box-shadow:0 0 0 3px rgba(214,255,63,.2); }
 .projectTitle { display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:end;margin:55px 0 65px; }
 .projectTitle h2 { font-size:clamp(48px,6vw,76px);line-height:.92;margin:0; }
 .projectTitle>p { color:var(--muted);line-height:1.6;font-size:17px; }
