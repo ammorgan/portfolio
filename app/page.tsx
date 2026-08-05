@@ -95,9 +95,9 @@ export default function Home() {
       <section className="principle shell">
         <p className="sectionLabel">03 / A guiding principle</p>
         <blockquote>
-          “Make it clear.<br />Then make it <em>matter.</em>”
+          “A problem is just a solution<br />that <em>hasn&apos;t been found yet.</em>”
         </blockquote>
-        <p className="sideNote">Good ideas deserve more than good intentions.</p>
+        <p className="sideNote">A belief I live by.</p>
       </section>
 
       <section className="contact" id="contact">
