@@ -8,7 +8,7 @@ const projects = [
 
 export default function Projects() {
   return <main id="top"><SiteNav />
-    <header className="pageHero shell projectsHero"><span className="kicker">Technical projects</span><h1>Technology made<br /><em>useful, visible, actionable.</em></h1><p>Selected work showing how I connect technical depth, product thinking, and operational outcomes.</p></header>
+    <header className="pageHero shell projectsHero"><span className="kicker">Technical projects</span><h1><span>Technology made</span><em>useful, visible, actionable.</em></h1><p>Selected work showing how I connect technical depth, product thinking, and operational outcomes.</p></header>
     <section className="projectList shell">{projects.map(project=><article className="projectCase" key={project.number}>
       <div className="projectTop"><span className="projectNumber">{project.number}</span><span className="projectKind">{project.kind}</span></div>
       <div className="projectTitle"><h2>{project.title}</h2><p>{project.description}</p></div>

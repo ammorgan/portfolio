@@ -92,6 +92,9 @@ blockquote { font-size:clamp(60px,7.5vw,104px); line-height:.92; text-align:cent
 .community { padding:120px 0;display:grid;grid-template-columns:1fr 1fr;gap:10%; }
 .community h2 { font-size:64px;line-height:.95; }.community h3 { margin:0 0 7px;font-size:17px; }.community p { color:var(--muted);margin:0 0 35px;line-height:1.5; }
 .projectsHero { padding-bottom:100px; }
+.projectsHero h1 { line-height:.92; }
+.projectsHero h1>span,.projectsHero h1>em { display:block; }
+.projectsHero h1>em { margin-top:.14em; }
 .projectList { padding-bottom:140px; }
 .projectCase { padding:45px 0 80px;border-top:1px solid var(--line); }
 .projectTop { display:flex;justify-content:space-between;font-size:10px;letter-spacing:.13em;text-transform:uppercase; }
@@ -118,7 +121,7 @@ blockquote { font-size:clamp(60px,7.5vw,104px); line-height:.92; text-align:cent
   .valueSection{padding:100px 0 10px;grid-template-columns:1fr;gap:55px}.valueHeading{position:static}.valueList>div{grid-template-columns:42px 1fr;min-height:78px}.valueList p{font-size:21px}
   .proofSection{padding:100px 0}.sectionIntro{grid-template-columns:1fr;gap:35px}.proofGrid{grid-template-columns:1fr}.proofGrid article,.proofGrid article:nth-child(even){border-left:0;padding:30px 0;min-height:235px}.proofGrid h3{margin-top:48px}
   .featuredWork,.skillsSection{padding:95px 0}.featuredGrid{grid-template-columns:1fr}.featureDetails{padding-top:45px}.quoteSection{padding:100px 0}
-  .pageHero{padding:70px 0 95px}.pageHero h1{font-size:17vw}.pageHero>p{margin-left:0}.role{grid-template-columns:1fr;gap:20px;padding:48px 0}.role h2{font-size:30px}.community{grid-template-columns:1fr;gap:50px}.community h2{font-size:52px}
+  .pageHero{padding:70px 0 95px}.pageHero h1{font-size:17vw}.projectsHero h1{line-height:.98}.projectsHero h1>em{margin-top:.18em}.pageHero>p{margin-left:0}.role{grid-template-columns:1fr;gap:20px;padding:48px 0}.role h2{font-size:30px}.community{grid-template-columns:1fr;gap:50px}.community h2{font-size:52px}
   .projectTitle{grid-template-columns:1fr;gap:20px}.caseGrid{grid-template-columns:1fr}.caseGrid>div,.caseGrid>div:first-child{padding:25px 0;border-right:0;border-bottom:1px solid var(--line)}.caseGrid>div:last-child{border-bottom:0}.skillsMatrix{grid-template-columns:1fr}.skillsMatrix>div,.skillsMatrix>div:nth-child(even){border-left:0;padding:30px 0}
   .footerGrid{grid-template-columns:1fr;min-height:560px}.footerActions{justify-content:start}.footerBottom{font-size:8px}
 }
