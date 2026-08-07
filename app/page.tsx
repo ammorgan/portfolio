@@ -2,83 +2,91 @@ import { SiteFooter, SiteNav } from "./site-nav";
 
 const metrics = [
   ["2.5M", "Quotes delivered in 2024"],
-  ["53%", "Purchase increase vs. legacy platform"],
-  ["60+", "Engineering dependencies managed"],
-  ["92%", "Intern conversion + $150K saved"],
+  ["53%", "More purchases vs. legacy platform"],
+  ["60+", "Cross-team dependencies managed"],
+  ["92%", "Intern-to-full-time conversion"],
 ];
 
-const valueDrivers = [
-  "Defining ambiguous problems",
-  "Whiteboarding complex systems",
-  "Challenging assumptions",
-  "Partnering with designers and senior engineers",
-  "Tracing APIs, payloads, and integrations",
-  "Using AI to uncover requirements",
-  "Identifying risks before delivery",
+const valueLanes = [
+  { number: "01", title: "Discover the real problem", text: "Define ambiguous problems, challenge assumptions, and use AI-assisted repository analysis to uncover requirements that are easy to miss." },
+  { number: "02", title: "Design the whole system", text: "Whiteboard complex systems and trace APIs, payloads, integrations, customer journeys, and operational constraints end to end." },
+  { number: "03", title: "De-risk delivery early", text: "Partner with designers, architects, and senior engineers to identify downstream risk and shape scalable solutions before delivery begins." },
 ];
+
+const impact = [
+  { label: "Product growth", title: "Modernized an enterprise sales journey", text: "Led a simplified agency experience that increased quote starts 13%, completed quotes 17%, and purchases 53% versus the legacy platform." },
+  { label: "Platform transformation", title: "Turned a local integration issue into a scalable strategy", text: "Redirected a vendor-specific date-and-time change into a cross-integrator approach that maintained delivery continuity without creating long-term custom code." },
+  { label: "Delivery acceleration", title: "Advanced backlog readiness by 2–3 weeks", text: "Analyzed code commits across multi-story capabilities to identify completed vendor work early and shift delivery from end-of-feature handoff to incremental intake." },
+];
+
+const discoverySteps = ["Research", "AI analysis", "Current state", "Whiteboard", "Engineering", "Experience design", "Architecture", "Stories", "Delivery", "Measure"];
 
 export default function Home() {
   return (
     <main id="top">
       <SiteNav />
-      <section className="recruiterHero shell">
-        <div className="availability"><span /> Technical Product &amp; Engineering Leader</div>
-        <div className="heroGrid">
-          <div>
-            <h1>I turn complex<br />technology into<br /><em>clear momentum.</em></h1>
-            <p className="heroSummary"><strong>Technical product leader specializing in complex problem discovery, enterprise integrations, AI-assisted analysis, and cross-functional solution design.</strong><br /><span>11+ years connecting strategy, delivery, and people to move enterprise platforms forward.</span></p>
-            <div className="heroActions">
-              <a className="primaryButton" href="/projects">Explore technical work ↗</a>
-              <a className="textButton" href="/amanda-morgan-resume.pdf" target="_blank" rel="noreferrer">Download résumé ↓</a>
-            </div>
+      <section className="homeHero shell">
+        <div className="heroCopy">
+          <span className="eyebrow">Technical Product &amp; Engineering Leader · Aubrey, TX</span>
+          <h1>Turning ambiguity <em>into clarity.</em></h1>
+          <p><strong>I solve the technical problems that don&apos;t have obvious answers.</strong> My work combines systems thinking, engineering partnership, AI-assisted discovery, and customer-centered product leadership.</p>
+          <div className="heroActions">
+            <a className="primaryButton" href="/experience">See my impact <span>↗</span></a>
+            <a className="textButton" href="/amanda-morgan-resume.pdf" target="_blank" rel="noreferrer">Download résumé ↓</a>
           </div>
-          <figure className="heroPortrait">
-            <img src="/amanda-morgan.jpg" alt="Mandie Morgan smiling outdoors" />
-            <figcaption>Aubrey, TX · Hybrid</figcaption>
-          </figure>
         </div>
+        <figure className="heroPortrait">
+          <img src="/amanda-morgan.jpg" alt="Mandie Morgan smiling outdoors" />
+          <figcaption><span>11+ years</span> connecting strategy, systems, delivery, and people.</figcaption>
+        </figure>
       </section>
 
-      <section className="impactStrip">
+      <section className="impactStrip" aria-label="Selected career metrics">
         <div className="shell metricGrid">
           {metrics.map(([value, label]) => <div className="metric" key={value}><strong>{value}</strong><span>{label}</span></div>)}
         </div>
       </section>
 
       <section className="valueSection shell">
-        <div className="valueHeading">
-          <span className="kicker">Where I create the most value</span>
-          <h2>Clarity before code.<br /><em>Confidence before delivery.</em></h2>
+        <div className="sectionHeading">
+          <span className="eyebrow">Where I create the most value</span>
+          <h2>Clarity is a <em>delivery advantage.</em></h2>
         </div>
-        <div className="valueList">
-          {valueDrivers.map((driver, index) => <div key={driver}><span>0{index + 1}</span><p>{driver}</p></div>)}
-        </div>
-      </section>
-
-      <section className="proofSection shell">
-        <div className="sectionIntro"><span className="kicker">What I bring</span><h2>Leadership at the intersection of <em>product, engineering, and operations.</em></h2></div>
-        <div className="proofGrid">
-          <article><span>01</span><h3>Platform transformation</h3><p>Translate architecture, data flows, dependencies, and business priorities into plans teams can execute.</p></article>
-          <article><span>02</span><h3>Technical product strategy</h3><p>Shape roadmaps, prioritize backlogs, and translate Figma experiences into accessible, technically feasible engineering delivery.</p></article>
-          <article><span>03</span><h3>AI-enabled delivery</h3><p>Use GitHub Copilot and LLMs to accelerate technical discovery, analysis, and requirements validation.</p></article>
-          <article><span>04</span><h3>People &amp; organizations</h3><p>Build high-performing teams through coaching, operational clarity, executive communication, and influence.</p></article>
+        <div className="valueLanes">
+          {valueLanes.map((lane) => <article key={lane.number}><span>{lane.number}</span><h3>{lane.title}</h3><p>{lane.text}</p></article>)}
         </div>
       </section>
 
-      <section className="featuredWork">
-        <div className="shell featuredGrid">
-          <div><span className="kicker light">Featured technical project</span><h2>Engineering<br />Analytics<br /><em>Platform</em></h2></div>
-          <div className="featureDetails">
-            <p className="featureLead">A React-based analytics platform designed to turn multi-repository GitLab activity into actionable engineering intelligence.</p>
-            <ul><li>Delivery health and development activity</li><li>Defect trends and status insights</li><li>API integrations and caching strategies</li><li>AI-assisted operational analysis</li></ul>
-            <a className="inverseButton" href="/projects">View project breakdown ↗</a>
+      <section className="discoverySection shell">
+        <div className="sectionHeading"><span className="eyebrow">My discovery process</span><h2>Understand the system <em>before changing it.</em></h2><p>I research production behavior, repositories, APIs, business rules, technical documentation, and customer experiences before asking teams to make decisions.</p></div>
+        <ol className="discoveryFlow">{discoverySteps.map((step, index)=><li key={step}><span>{String(index + 1).padStart(2,"0")}</span><b>{step}</b></li>)}</ol>
+      </section>
+
+      <section className="impactStories">
+        <div className="shell">
+          <div className="sectionHeading lightHeading"><span className="eyebrow">Selected impact</span><h2>Evidence, not <em>adjectives.</em></h2></div>
+          <div className="impactList">
+            {impact.map((item, index) => <article key={item.title}><span className="impactNumber">0{index + 1}</span><div><span className="eyebrow">{item.label}</span><h3>{item.title}</h3></div><p>{item.text}</p></article>)}
           </div>
+          <a className="inverseButton" href="/experience">Explore full experience ↗</a>
         </div>
       </section>
 
-      <section className="quoteSection shell">
-        <span className="kicker">A belief I live by</span>
-        <blockquote>“A problem is just a solution<br />that <em>hasn&apos;t been found yet.</em>”</blockquote>
+      <section className="featuredProject shell">
+        <div className="featuredLabel"><span className="eyebrow">Featured technical work</span><span>Active development · Functional alpha</span></div>
+        <div className="featuredProjectGrid">
+          <h2>AI Quality<br /><em>Intelligence</em></h2>
+          <div><p className="featureLead">A local-first product concept for faster, more confident release decisions through explainable automation and responsible AI.</p><div className="tagRow"><span>React</span><span>TypeScript</span><span>System design</span><span>Responsible AI</span></div><a className="textButton" href="/projects">View the case study →</a></div>
+        </div>
+      </section>
+
+      <section className="pathSection shell">
+        <div className="sectionHeading"><span className="eyebrow">Keep exploring</span><h2>Choose your <em>next stop.</em></h2></div>
+        <div className="pathGrid">
+          <a href="/experience"><span>01</span><h3>Experience</h3><p>Enterprise transformation, measurable outcomes, and leadership scope.</p><b>Explore ↗</b></a>
+          <a href="/projects"><span>02</span><h3>Projects</h3><p>Technical concepts and systems that make engineering work visible and actionable.</p><b>Explore ↗</b></a>
+          <a href="/about"><span>03</span><h3>About</h3><p>How I work, what I believe, and the experiences that shaped my leadership.</p><b>Explore ↗</b></a>
+        </div>
       </section>
       <SiteFooter />
     </main>
