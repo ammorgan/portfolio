@@ -39,6 +39,7 @@ export function SiteFooter() {
         <div><span className="footerEyebrow">Technical Product &amp; Engineering Leader</span><h2>Have a complex problem worth solving?</h2></div>
         <div className="footerActions">
           <a href="mailto:amanda01cj@icloud.com?subject=Let%27s%20start%20a%20conversation">amanda01cj@icloud.com ↗</a>
+          <a href="https://www.linkedin.com/in/amandammorgan/" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a>
           <a href="/amanda-morgan-resume.pdf" target="_blank" rel="noreferrer">Download résumé ↓</a>
         </div>
         <div className="footerBottom"><span>© {new Date().getFullYear()} Mandie Morgan</span><a href="#top">Back to top ↑</a></div>
