@@ -1,7 +1,11 @@
 @import "tailwindcss";
 
 :root { --ink:#171713; --paper:#f4f1e9; --panel:#e7e2d6; --acid:#d6ff3f; --blue:#3447e8; --muted:#66665f; --line:rgba(23,23,19,.18); }
-[data-theme="dark"] { --ink:#f4f1e9; --paper:#11110f; --panel:#1d1d19; --muted:#aaa99f; --line:rgba(244,241,233,.2); color-scheme:dark; }
+[data-theme="dark"] { --ink:#f7f2e8; --paper:#171923; --panel:#262936; --acid:#e1ff65; --blue:#91a0ff; --muted:#c0c0bb; --line:rgba(247,242,232,.24); color-scheme:dark; }
+[data-theme="dark"] .impactStories,[data-theme="dark"] .toolkit,[data-theme="dark"] .careerCta { background:#10121a; }
+[data-theme="dark"] .siteFooter { background:#3447c9; }
+[data-theme="dark"] .pathGrid a:hover { background:#3447c9; }
+[data-theme="dark"] .heroPortrait img,[data-theme="dark"] .aboutHero img { filter:saturate(.92) brightness(.95) contrast(1.04); }
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; }
 body { margin:0; background:var(--paper); color:var(--ink); font-family:Arial,Helvetica,sans-serif; transition:background .25s,color .25s; }
