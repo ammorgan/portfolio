@@ -1,12 +1,5 @@
 import { SiteFooter, SiteNav } from "./site-nav";
 
-const metrics = [
-  ["2.5M", "Quotes delivered in 2024"],
-  ["53%", "More purchases vs. legacy platform"],
-  ["60+", "Cross-team dependencies managed"],
-  ["92%", "Intern-to-full-time conversion"],
-];
-
 const valueLanes = [
   { number: "01", title: "Discover the real problem", text: "Define ambiguous problems, challenge assumptions, and use AI-assisted repository analysis to uncover requirements that are easy to miss." },
   { number: "02", title: "Design the whole system", text: "Whiteboard complex systems and trace APIs, payloads, integrations, customer journeys, and operational constraints end to end." },
@@ -41,9 +34,14 @@ export default function Home() {
         </figure>
       </section>
 
-      <section className="impactStrip" aria-label="Selected career metrics">
-        <div className="shell metricGrid">
-          {metrics.map(([value, label]) => <div className="metric" key={value}><strong>{value}</strong><span>{label}</span></div>)}
+      <section className="coreSection">
+        <div className="shell coreGrid">
+          <div><span className="eyebrow">At my core</span><h2>I care more about finding the right answer than <em>being right.</em></h2></div>
+          <div className="coreBeliefs">
+            <article><span>01</span><h3>I’m comfortable saying “I don’t know.”</h3><p>Then I research, ask better questions, and keep going until the system makes sense.</p></article>
+            <article><span>02</span><h3>I believe the room is smarter than hierarchy.</h3><p>The best solution emerges when engineers, designers, architects, operators, and business partners feel heard.</p></article>
+            <article><span>03</span><h3>I challenge ideas because I care about people.</h3><p>Healthy disagreement protects teams from preventable complexity and creates space for better long-term decisions.</p></article>
+          </div>
         </div>
       </section>
 

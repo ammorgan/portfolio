@@ -46,12 +46,14 @@ em { color:var(--blue); font-weight:400; }
 .heroPortrait figcaption { margin-top:28px; color:var(--muted); font-size:12px; line-height:1.45; }
 .heroPortrait figcaption span { color:var(--ink); font-weight:800; text-transform:uppercase; letter-spacing:.1em; }
 
-.impactStrip { background:var(--acid); color:#171713; border-block:1px solid #171713; }
-.metricGrid { display:grid; grid-template-columns:repeat(4,1fr); }
-.metric { padding:34px 28px; border-right:1px solid rgba(23,23,19,.25); display:flex; flex-direction:column; gap:8px; }
-.metric:first-child { padding-left:0; }.metric:last-child { border-right:0; }
-.metric strong { color:var(--blue); font:400 46px/1 Georgia,serif; letter-spacing:-.05em; }
-.metric span { font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; }
+.coreSection { background:var(--acid); color:#171713; padding:125px 0; border-block:1px solid #171713; }
+.coreGrid { display:grid; grid-template-columns:.9fr 1.1fr; gap:10%; align-items:start; }
+.coreGrid h2 { margin:45px 0 0; font-size:clamp(50px,5.6vw,76px); line-height:.96; }
+.coreBeliefs { border-top:1px solid rgba(23,23,19,.28); }
+.coreBeliefs article { display:grid; grid-template-columns:42px 1fr; column-gap:18px; padding:25px 0; border-bottom:1px solid rgba(23,23,19,.28); }
+.coreBeliefs article>span { grid-row:1/3; color:var(--blue); font-size:10px; }
+.coreBeliefs h3 { margin:0 0 9px; font:400 22px/1.25 Georgia,serif; }
+.coreBeliefs p { margin:0; color:#50504a; line-height:1.55; }
 
 .sectionHeading { display:grid; grid-template-columns:210px 1fr; gap:8%; align-items:start; }
 .sectionHeading h2 { max-width:900px; margin:0; font-size:clamp(50px,6.2vw,82px); line-height:.96; }
@@ -99,7 +101,7 @@ em { color:var(--blue); font-weight:400; }
 @media (max-width:800px) {
   .shell { width:calc(100% - 36px); }.nav { height:76px; }.mobileMenuButton { display:flex; }.navLinks { display:none; position:absolute; top:68px; left:0; right:0; padding:18px; background:var(--paper); border:1px solid var(--line); box-shadow:0 18px 45px rgba(0,0,0,.16); flex-direction:column; align-items:stretch; gap:0; }.navLinks.isOpen { display:flex; }.navLinks>a:not(.navCta) { display:flex; padding:18px 4px; border-bottom:1px solid var(--line); font:400 26px/1 Georgia,serif; }.navLinks>a:not(.navCta):after { display:none; }.navLinks .themeToggle { margin-bottom:12px; align-self:flex-start; }.navCta { margin-top:16px; }
   .homeHero,.aboutHero { min-height:0; padding:70px 0 95px; grid-template-columns:1fr; gap:70px; }.heroCopy h1,.aboutHero h1 { font-size:18vw; }.heroCopy>p { font-size:16px; }.heroActions { align-items:flex-start; flex-direction:column; }.heroPortrait,.aboutHero img { width:84%; margin-left:auto; }
-  .metricGrid { grid-template-columns:1fr 1fr; }.metric,.metric:first-child { padding:24px 14px; border-bottom:1px solid rgba(23,23,19,.25); }.metric strong { font-size:35px; }
+  .coreSection { padding:90px 0; }.coreGrid { grid-template-columns:1fr; gap:60px; }.coreGrid h2 { font-size:14vw; }
   .sectionHeading { grid-template-columns:1fr; gap:35px; }.sectionHeading>p { grid-column:1; }.valueSection,.discoverySection,.pathSection,.principles { padding:95px 0; }.valueLanes { grid-template-columns:1fr; }.valueLanes article,.valueLanes article+article { min-height:240px; padding:28px 0; border-right:0; border-bottom:1px solid var(--line); }.valueLanes h3 { margin-top:55px; }
   .discoveryFlow { grid-template-columns:1fr 1fr; }.discoveryFlow li,.discoveryFlow li:nth-child(5n),.discoveryFlow li:nth-child(n+6) { min-height:115px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); }.discoveryFlow li:nth-child(even) { border-right:0; }.discoveryFlow li:nth-child(n+9) { border-bottom:0; }.discoveryFlow li:after { display:none; }
   .impactStories,.toolkit,.careerCta { padding:95px 0; }.impactList article { grid-template-columns:45px 1fr; gap:20px; }.impactList article>p { grid-column:2; }.featuredProject { padding:100px 0; }.featuredLabel { gap:25px; }.featuredProjectGrid,.projectTitle,.backgroundGrid { grid-template-columns:1fr; gap:35px; }.featuredProjectGrid>div>p { font-size:22px; }.pathGrid { grid-template-columns:1fr; }.pathGrid a { min-height:280px; margin-top:-1px; }.pathGrid h3 { margin-top:55px; }
