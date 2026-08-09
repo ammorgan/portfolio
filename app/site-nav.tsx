@@ -40,6 +40,7 @@ export function SiteFooter() {
         <div className="footerActions">
           <a href="mailto:amanda01cj@icloud.com?subject=Let%27s%20start%20a%20conversation">amanda01cj@icloud.com ↗</a>
           <a href="https://www.linkedin.com/in/amandammorgan/" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a>
+          <a href="https://github.com/ammorgan?tab=repositories" target="_blank" rel="noreferrer">View GitHub ↗</a>
           <a href="/amanda-morgan-resume.pdf" target="_blank" rel="noreferrer">Download résumé ↓</a>
         </div>
         <div className="footerBottom"><span>© {new Date().getFullYear()} Mandie Morgan</span><a href="#top">Back to top ↑</a></div>
