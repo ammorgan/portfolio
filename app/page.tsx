@@ -71,10 +71,10 @@ export default function Home() {
       </section>
 
       <section className="featuredProject shell">
-        <div className="featuredLabel"><span className="eyebrow">Featured technical work</span><span>Active development · Web alpha + mobile build</span></div>
+        <div className="featuredLabel"><span className="eyebrow">Featured technical work</span><span>Active development · Cross-platform alpha</span></div>
         <div className="featuredProjectGrid">
-          <h2>Sports<br /><em>IQ</em></h2>
-          <div><p className="featureLead">A progression-based learning game that teaches rules, reads, responsibilities, and strategy through adaptive, age-aware interactive modules.</p><div className="tagRow"><span>React</span><span>TypeScript</span><span>Expo</span><span>React Native</span></div><a className="textButton" href="/projects">View the case study →</a></div>
+          <h2>Rep<br /><em>Quest</em></h2>
+          <div><p className="featureLead">A privacy-first, age-adaptive learning game spanning 23 sports, guided playbooks, real-game clips, mastery-driven challenges, and unified web and mobile experiences.</p><div className="tagRow"><span>React</span><span>TypeScript</span><span>Expo</span><span>Cloudflare D1</span></div><a className="textButton" href="/projects">View the case study →</a></div>
         </div>
       </section>
 
