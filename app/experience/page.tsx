@@ -14,6 +14,21 @@ export default function Experience() {
     <section className="timeline shell">
       {roles.map((role, i) => <article className="role" key={role.title + role.dates}><div className="roleRail"><span>0{i+1}</span><p>{role.dates}</p></div><div className="roleBody"><span className="eyebrow">{role.context}</span><h2>{role.title}</h2><p className="roleSummary">{role.summary}</p><ul>{role.points.map(p=><li key={p}>{p}</li>)}</ul></div></article>)}
     </section>
+    <section className="workSampleFeature shell" aria-labelledby="work-sample-title">
+      <div className="workSampleMeta"><span className="eyebrow">Anonymized work sample</span><span>3-page case study · PDF</span></div>
+      <div className="workSampleGrid">
+        <h2 id="work-sample-title">From fragmented systems to <em>a reusable platform.</em></h2>
+        <div>
+          <p className="workSampleLead">See how I defined shared integrations, data contracts, and delivery mechanisms for an enterprise cloud transformation—then built the operating model needed to scale it.</p>
+          <div className="workSampleOutcomes" aria-label="Selected case study outcomes">
+            <p><span>Delivery throughput</span><b>Increased from approximately 4 to more than 12 features per month.</b></p>
+            <p><span>Vendor quality</span><b>Reduced the open vendor-defect backlog from 15–18 items to 2–3.</b></p>
+            <p><span>Technical focus</span><b>Avoided approximately 3–4 weeks of unnecessary development.</b></p>
+          </div>
+          <a className="primaryButton" href="/mandie-morgan-work-sample.pdf" target="_blank" rel="noreferrer">Read the case study <span>↗</span></a>
+        </div>
+      </div>
+    </section>
     <section className="careerCta"><div className="shell"><span className="eyebrow">The throughline</span><h2>From talent systems to enterprise platforms, I make <em>complex work easier to understand and execute.</em></h2><a className="inverseButton" href="/amanda-morgan-resume.pdf" target="_blank" rel="noreferrer">Download full résumé ↓</a></div></section>
     <SiteFooter />
   </main>;
