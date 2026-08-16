@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { ThemeToggle } from "./theme-toggle";
 
 export function SiteNav() {
@@ -16,7 +17,7 @@ export function SiteNav() {
 
   return (
     <nav className="nav shell" aria-label="Main navigation">
-      <a className="wordmark" href="/" aria-label="Mandie Morgan, home">MM<span className="dot">.</span></a>
+      <Link className="wordmark" href="/" aria-label="Mandie Morgan, home">MM<span className="dot">.</span></Link>
       <button className="mobileMenuButton" type="button" aria-expanded={menuOpen} aria-controls="mobile-navigation" aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"} onClick={() => setMenuOpen(!menuOpen)}>
         <span className="menuLine" /><span className="menuLine" /><span className="menuLine" />
       </button>
@@ -36,7 +37,7 @@ export function SiteFooter() {
   return (
     <footer className="siteFooter">
       <div className="shell footerGrid">
-        <div><span className="footerEyebrow">Technical Product &amp; Engineering Leader</span><h2>Have a complex problem worth solving?</h2></div>
+        <div><span className="footerEyebrow">Lead Technical Product Manager</span><h2>Have a complex problem worth solving?</h2></div>
         <div className="footerActions">
           <a href="mailto:amanda01cj@icloud.com?subject=Let%27s%20start%20a%20conversation">amanda01cj@icloud.com ↗</a>
           <a href="https://www.linkedin.com/in/amandammorgan/" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a>

@@ -20,9 +20,13 @@ export default function Home() {
       <SiteNav />
       <section className="homeHero shell">
         <div className="heroCopy">
-          <span className="eyebrow">Technical Product &amp; Engineering Leader · Aubrey, TX</span>
+          <span className="eyebrow">Lead Technical Product Manager · Aubrey, TX</span>
           <h1>Turning ambiguity <em>into clarity.</em></h1>
-          <p><strong>I solve the technical problems that don&apos;t have obvious answers.</strong> My work combines systems thinking, engineering partnership, AI-assisted discovery, and customer-centered product leadership.</p>
+          <p><strong>I solve the technical problems that don&apos;t have obvious answers.</strong> My work combines systems thinking, integration strategy, engineering partnership, AI-assisted discovery, and customer-centered product leadership.</p>
+          <div className="recruiterSignal" aria-label="Target roles and technical product focus">
+            <span>Target roles</span>
+            <div><strong>Lead / Principal Technical Product Manager</strong><p>Enterprise platforms · Integrations · AI-enabled product delivery</p></div>
+          </div>
           <div className="heroActions">
             <a className="primaryButton" href="/experience">See my impact <span>↗</span></a>
             <a className="textButton" href="/amanda-morgan-resume.pdf" target="_blank" rel="noreferrer">Download résumé ↓</a>
@@ -66,7 +70,7 @@ export default function Home() {
           <div className="impactList">
             {impact.map((item, index) => <article key={item.title}><span className="impactNumber">0{index + 1}</span><div><span className="eyebrow">{item.label}</span><h3>{item.title}</h3></div><p>{item.text}</p></article>)}
           </div>
-          <a className="inverseButton" href="/experience">Explore full experience ↗</a>
+          <a className="inverseButton" href="/experience">Explore full experience →</a>
         </div>
       </section>
 
@@ -74,16 +78,16 @@ export default function Home() {
         <div className="featuredLabel"><span className="eyebrow">Featured technical work</span><span>Active development · Cross-platform alpha</span></div>
         <div className="featuredProjectGrid">
           <h2>Rep<br /><em>Quest</em></h2>
-          <div><p className="featureLead">A privacy-first, age-adaptive learning game spanning 23 sports, guided playbooks, real-game clips, mastery-driven challenges, and unified web and mobile experiences.</p><div className="tagRow"><span>React</span><span>TypeScript</span><span>Expo</span><span>Cloudflare D1</span></div><a className="textButton" href="/projects">View the case study →</a></div>
+          <div><p className="featureLead">A privacy-first, age-adaptive learning game spanning 23 sports, guided playbooks, real-game clips, mastery-driven challenges, and unified web and mobile experiences.</p><p className="featureOwnership"><strong>My role:</strong> Product strategy, experience architecture, hands-on implementation, and beta validation.</p><div className="tagRow"><span>React</span><span>TypeScript</span><span>Expo</span><span>Cloudflare D1</span></div><a className="textButton" href="/projects">View the case study →</a></div>
         </div>
       </section>
 
       <section className="pathSection shell">
         <div className="sectionHeading"><span className="eyebrow">Keep exploring</span><h2>Choose your <em>next stop.</em></h2></div>
         <div className="pathGrid">
-          <a href="/experience"><span>01</span><h3>Experience</h3><p>Enterprise transformation, measurable outcomes, and leadership scope.</p><b>Explore ↗</b></a>
-          <a href="/projects"><span>02</span><h3>Projects</h3><p>Technical concepts and systems that make engineering work visible and actionable.</p><b>Explore ↗</b></a>
-          <a href="/about"><span>03</span><h3>About</h3><p>How I work, what I believe, and the experiences that shaped my leadership.</p><b>Explore ↗</b></a>
+          <a href="/experience"><span>01</span><h3>Experience</h3><p>Enterprise transformation, measurable outcomes, and leadership scope.</p><b>Explore →</b></a>
+          <a href="/projects"><span>02</span><h3>Projects</h3><p>Technical concepts and systems that make engineering work visible and actionable.</p><b>Explore →</b></a>
+          <a href="/about"><span>03</span><h3>About</h3><p>How I work, what I believe, and the experiences that shaped my leadership.</p><b>Explore →</b></a>
         </div>
       </section>
       <SiteFooter />
