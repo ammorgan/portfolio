@@ -1,7 +1,7 @@
 import { SiteFooter, SiteNav } from "./site-nav";
 
 const valueLanes = [
-  { number: "01", title: "Discover the real problem", text: "Define ambiguous problems, challenge assumptions, and use AI-assisted repository analysis to uncover requirements that are easy to miss." },
+  { number: "01", title: "Discover the real problem", text: "Define ambiguous problems, challenge assumptions, and analyze repositories to uncover requirements that are easy to miss." },
   { number: "02", title: "Design the whole system", text: "Whiteboard complex systems and trace APIs, payloads, integrations, customer journeys, and operational constraints end to end." },
   { number: "03", title: "De-risk delivery early", text: "Partner with designers, architects, and senior engineers to identify downstream risk and shape scalable solutions before delivery begins." },
 ];
@@ -52,7 +52,7 @@ export default function Home() {
       <section className="valueSection shell">
         <div className="sectionHeading">
           <span className="eyebrow">Where I create the most value</span>
-          <h2>Clarity is a <em>delivery advantage.</em></h2>
+          <h2>Clear ownership and testable requirements <em>reduce delivery risk.</em></h2>
         </div>
         <div className="valueLanes">
           {valueLanes.map((lane) => <article key={lane.number}><span>{lane.number}</span><h3>{lane.title}</h3><p>{lane.text}</p></article>)}

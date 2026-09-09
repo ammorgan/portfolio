@@ -9,7 +9,7 @@ const roles = [
 
 export default function Experience() {
   return <main id="top"><SiteNav />
-    <header className="pageHero shell"><span className="eyebrow">Experience</span><h1>Strategy that ships. <em>Leadership that scales.</em></h1><p>More than a decade bringing structure to complex enterprise technology work across product, engineering, platform modernization, and operations.</p></header>
+    <header className="pageHero shell"><span className="eyebrow">Experience</span><h1>Leading complex platform work <em>from discovery through delivery.</em></h1><p>More than a decade bringing structure to complex enterprise technology work across product, engineering, platform modernization, and operations.</p></header>
     <section className="experienceIntro shell"><span>State Farm</span><span>Aubrey, TX · Hybrid</span></section>
     <section className="timeline shell">
       {roles.map((role, i) => <article className="role" key={role.title + role.dates}><div className="roleRail"><span>0{i+1}</span><p>{role.dates}</p></div><div className="roleBody"><span className="eyebrow">{role.context}</span><h2>{role.title}</h2><p className="roleSummary">{role.summary}</p><ul>{role.points.map(p=><li key={p}>{p}</li>)}</ul></div></article>)}
