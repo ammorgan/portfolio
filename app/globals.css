@@ -179,6 +179,7 @@ p:last-child { margin-bottom: 0; }
 .outcomeList > div { border-top: 1px solid var(--line); padding: 22px 0; }
 .outcomeList dt { font-size: .76rem; font-weight: 650; color: var(--accent); margin-bottom: 7px; }
 .outcomeList dd { margin: 0; font-size: 1rem; color: var(--ink); }
+.workSampleNote { margin-top: 14px; font-size: .8rem; line-height: 1.7; }
 
 /* Projects: scan the overview, then open the supporting details. */
 .projectDirectory { display: grid; grid-template-columns: 130px minmax(0, 1fr); align-items: start; gap: 20px; padding-block: 24px; border-block: 1px solid var(--line); }

@@ -77,7 +77,7 @@ export function SiteFooter() {
             <a className="footerEmail" href="mailto:amanda01cj@icloud.com">amanda01cj@icloud.com</a>
           </div>
           <div className="footerColumn"><h3>Explore</h3>{navigation.map(({ href, label }) => <Link href={href} key={href}>{label}</Link>)}</div>
-          <div className="footerColumn"><h3>Connect &amp; resources</h3><a href="https://www.linkedin.com/in/amandammorgan/" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://github.com/ammorgan?tab=repositories" target="_blank" rel="noreferrer">GitHub</a><a href="/mandie-morgan-resume-october-2026.pdf" target="_blank" rel="noreferrer">Résumé (PDF)</a><a href="/mandie-morgan-work-sample.pdf" target="_blank" rel="noreferrer">Work sample (PDF)</a></div>
+          <div className="footerColumn"><h3>Connect &amp; resources</h3><a href="https://www.linkedin.com/in/amandammorgan/" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://github.com/ammorgan?tab=repositories" target="_blank" rel="noreferrer">GitHub</a><a href="/mandie-morgan-resume-october-2026.pdf" target="_blank" rel="noreferrer">Résumé (PDF)</a><a href="/mandie-morgan-work-sample-october-2026.pdf" target="_blank" rel="noreferrer">Work sample (PDF)</a></div>
         </div>
         <div className="footerBottom"><span>© {new Date().getFullYear()} Mandie Morgan</span><span>Aubrey, Texas</span><a href="#top">Back to top</a></div>
       </div>
