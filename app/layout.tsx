@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   title,
   description,
   icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
-  openGraph: { title, description, type: "website", images: [{ url: "/og-v3.png", width: 1731, height: 909, alt: "Mandie Morgan — Lead Technical Product Manager" }] },
-  twitter: { card: "summary_large_image", title, description, images: ["/og-v3.png"] },
+  openGraph: { title, description, siteName: "Mandie Morgan", type: "website", images: [{ url: "/mandie-morgan-social-october-2026.png", width: 1200, height: 630, type: "image/png", alt: "Mandie Morgan — I set product direction and connect strategy to delivery." }] },
+  twitter: { card: "summary_large_image", title, description, images: [{ url: "/mandie-morgan-social-october-2026.png", alt: "Mandie Morgan — I set product direction and connect strategy to delivery." }] },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
